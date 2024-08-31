@@ -53,6 +53,7 @@
 
 .btn-accept-CGU {
   margin-right: 150px;
+  margin-bottom: 16px;
 }
 
 .unscribe {
@@ -76,11 +77,15 @@
   .unscribe-display {
     left: 20%;
   }
+
+  .btn-accept-CGU, .back {
+    font-size: 20px;
+  }
 }
 
 @media all and (max-width: 480px) {
   .unscribe-display {
-    left: 6%
+    left: -3%
   }
 }
 
