@@ -1,0 +1,159 @@
+#content-mentions {
+  margin-top: 100px;
+}
+
+#mentions {
+  margin-bottom: 100px;
+  margin-left: 86px;
+}
+
+#mentions-cookies,
+#mentions {
+  margin: 0 86px 100px 86px;
+}
+
+#mentions h1 {
+  font-size: 48px;
+}
+
+#mentions-cookies h1 {
+  font-size: 48px;
+}
+
+#mentions-cookies ul li {
+  margin-bottom: 8px;
+}
+
+#mentions-cookies p {
+  line-height: 28px;
+}
+
+.mentions-span {
+  color: #2ab8cd;
+  font-weight: 600;
+  font-size: 21px;
+}
+
+.mentions-span-text {
+  color: #2ab8cd;
+}
+
+.base {
+  display: flex;
+  margin: 18px 0;
+}
+
+.link-CGU {
+  color: #2ab8cd;
+}
+
+.mentions-span-2 {
+  color: #f6a316;
+}
+
+.btn-accept-CGU {
+  margin-right: 150px;
+}
+
+.unscribe {
+  display: none;
+}
+
+.unscribe-display {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #0d2d45;
+  background-color: #071520;
+  padding: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+
+@media all and (max-width: 768px) {
+  .unscribe-display {
+    left: 20%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .unscribe-display {
+    left: 6%
+  }
+}
+
+.unscribe-display p {
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+#btn-closed {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 15px;
+  font-size: 20px;
+}
+
+#landing-footer-mentions {
+  width: 100%;
+  background: radial-gradient(circle at bottom, #0d2d45 10%, #071520);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  padding: 0 28px 0 28px;
+}
+
+#landing-footer-mentions .link-partenaires {
+  display: flex;
+  margin: 16px 0;
+}
+
+#landing-footer-mentions .link-partenaires a {
+  margin-right: 10px;
+  align-content: center;
+}
+
+#landing-footer-mentions .link-partenaires a img {
+  height: 31px;
+}
+
+#landing-footer-mentions .link-footer-propos {
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+#landing-footer-mentions .link-footer-propos a {
+  color: #2ab8cd;
+}
+
+#landing-footer-mentions .link-terry {
+  padding-right: 24px;
+  border-right: 2px solid #f6a316;
+}
+
+#landing-footer-mentions .link-about {
+  padding-left: 24px;
+}
+
+.list-CGU {
+  margin-bottom: 25px;
+}
+
+.link-CGU:hover {
+  text-decoration: underline;
+}
+
+.list-CGU li {
+  margin-bottom: 16px;
+}
+
+@media all and (max-width: 768px) {
+  #mentions,
+  #mentions-cookies {
+    margin: 0 16px 24px 16px;
+  }
+}

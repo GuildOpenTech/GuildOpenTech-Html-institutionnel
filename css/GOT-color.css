@@ -1,0 +1,274 @@
+/* GOT Landing Page Dynamic Style Index
+
+1. Website Default Styling
+2. Header/Navigation
+3. Primary and Secondary Colors
+4. Banner
+5. Typography
+6. Buttons
+7. Footer
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 1. Website Default Styling */
+/*------------------------------------------------------------------------------------------*/
+
+body {
+  background: #071520;
+  font-family: "Cabin", "Open Sans", Arial;
+  font-size: 18px;
+  color: #fdfdfd;
+}
+
+#about-body {
+  background: radial-gradient(circle at bottom right, #0d2d45 30%, #071520 70%);
+}
+
+/* Standard Headings h1-h6 */
+
+h1 {
+  font-size: 60px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: 300;
+  color: #f6a316;
+}
+
+h3 {
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  color: #f6a316;
+}
+
+/* Titres section2 icones et packages */
+h4 {
+  font-size: 20px;
+  font-weight: 200;
+  color: #f6a316;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* 2. Header sur page d'accueil */
+/*------------------------------------------------------------------------------------------*/
+
+nav a {
+  color: #f6a316;
+}
+
+.nav-list li:hover .icon {
+  color: #2ab8cd;
+  text-shadow: 0 0 5px #2ab8cd, 0 0 10px #2ab8cd, 0 0 20px #2ab8cd,
+    0 0 40px #2ab8cd, 0 0 80px #2ab8cd, 0 0 120px #2ab8cd;
+}
+
+.nav-list li:hover a {
+  color: #f6a316;
+  transform: scale(110%);
+  /* text-shadow: 0 0 5px #2ab8cd, 0 0 10px #2ab8cd, 0 0 20px #2ab8cd,
+    0 0 40px #2ab8cd, 0 0 80px #2ab8cd, 0 0 120px #2ab8cd; */
+}
+
+/* Header Colors when the Navigation is sticky and solid */
+
+.nav-list ul li a {
+  color: #f6a316;
+}
+
+/* Header Active State */
+#nav-mobile .nav-list li a.active {
+  color: #f6a316;
+  text-shadow: none;
+}
+
+.nav-list li a.active {
+  color: #2ab8cd;
+  text-shadow: 0 0 5px #2ab8cd, 0 0 10px #2ab8cd, 0 0 20px #2ab8cd,
+    0 0 40px #2ab8cd, 0 0 80px #2ab8cd, 0 0 120px #2ab8cd;
+}
+
+/* Border Color _ Cadres _ sections 6_Témoignages et 7_GOT Connexion */
+
+.pricing-block-content:hover {
+  border-color: #2ab8cd;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* 3. Section 7_GOT Connexion_Primary and Secondary Colors */
+/*------------------------------------------------------------------------------------------*/
+
+/* Section 7_GOT Connexion Primary Background and Text Colors */
+
+.primary-color,
+.featured .pricing {
+  background: linear-gradient(to left, #071520, #0d2d45);
+}
+
+/* Section 7_GOT Connexion Couleur texte tarif */
+.primary-color,
+.primary-color .section-title,
+.primary-color .section-subtitle,
+.featured .pricing,
+.featured .pricing p {
+  color: #fcfbfb;
+}
+/* Tirets dans toutes les sections */
+.section-heading h2:after {
+  background: #2ab8cd;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin-top: 30px;
+}
+
+.section-heading h2:after {
+  margin: 30px auto 25px auto;
+}
+
+/* Section 7_GOT Connexion Background Cadre and Text Colors */
+
+.secondary-color {
+  background: linear-gradient(to bottom, #071520, #0d2d45);
+}
+
+#landing-footer,
+#landing-footer-about,
+#landing-footer-connexion,
+#landing-footer-register {
+  background: radial-gradient(circle at bottom, #0d2d45 10%, #071520 80%);
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* 4. Hero-section
+/*------------------------------------------------------------------------------------------*/
+
+/* Sections Background and Text Colors = section 1 */
+
+.hero-section {
+  background: url("../images/banner-images/Miss_Terry.webp") no-repeat right
+      bottom,
+    url("../images/banner-images/Body_MeshGradient-CC-N°1.webp") no-repeat right
+      bottom;
+  background-size: 7%, 50%;
+}
+
+.about {
+  background: url("../images/banner-images/meshgradient-CC.webp") no-repeat
+    right bottom;
+  background-size: 50%;
+}
+
+.project {
+  background: url("../images/banner-images/Body_3_MGrdt-CC_html.webp") no-repeat
+    left top;
+  background-size: 70%;
+}
+
+#Sedepasser {
+  background: url("../images/banner-images/Body_2_MeshGradient-CC_html.webp")
+    no-repeat right center;
+  background-size: 50%;
+}
+
+#content-connexion-page {
+  background: url("../images/banner-images/GOT_Formulaire_CC_html.webp")
+    no-repeat left bottom;
+  background-size: 19%;
+}
+
+#content-register-page {
+  background: url("../images/banner-images/GOT_Formulaires_CC_1.webp") no-repeat
+    center bottom;
+  background-size: 28%;
+}
+
+@media all and (max-width: 768px) {
+  #content-connexion-page {
+    background-size: 30%;
+  }
+
+  #content-register-page {
+    background-size: 39%;
+  }
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* 6. Buttons */
+/*------------------------------------------------------------------------------------------*/
+
+/* ----------Default Buttons---------- */
+
+/* Watch video section Se dépasser 4 et Connexion 7  Button Text */
+
+.button,
+input[type="submit"] {
+  font-size: 24px;
+  font-weight: 500;
+  color: #f6a316;
+}
+
+/* Section Innovons 1  et Watch video section Se dépasser 4 Button contour Color */
+
+.button,
+input[type="submit"] {
+  border-color: #2ab8cd;
+  color: #f6a316;
+}
+
+/* Button Hover Color */
+
+.button:hover,
+input[type="submit"]:hover {
+  border-color: #2ab8cd;
+  color: #f6a316;
+  animation: shake 0.5s ease-in-out 6;
+}
+
+/* ----------Banner Buttons---------- */
+
+/* Section Innovons 1 Button Text */
+
+#banner .button {
+  font-size: 24px;
+  color: #f6a316;
+}
+
+/* Button Color */
+
+#banner .button {
+  border-color: #2ab8cd;
+}
+
+/* Button Hover Color */
+
+#banner .button:hover {
+  color: #f6a316;
+  border-color: #2ab8cd;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* 7. Footer _  Design@GOT */
+/*------------------------------------------------------------------------------------------*/
+
+#landing-footer,
+#landing-footer p,
+#landing-footer a,
+#landing-footer-about a,
+#landing-footer-connexion a,
+#landing-footer-register a {
+  height: 50px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2ab8cd;
+}
+
+/* Footer Icon Color */
+
+#landing-footer i {
+  color: #2ab8cd;
+}
