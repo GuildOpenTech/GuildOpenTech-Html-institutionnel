@@ -61,7 +61,7 @@
 }
 
 .unscribe-display {
-  width: 400px;
+  width: 370px;
   display: flex;
   flex-direction: column;
   border: 2px solid #0d2d45;
@@ -85,7 +85,7 @@
 
 @media all and (max-width: 480px) {
   .unscribe-display {
-    left: -3%
+    left: 2%
   }
 }
 
