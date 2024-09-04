@@ -72,23 +72,6 @@
   left: 50%;
 }
 
-
-@media all and (max-width: 768px) {
-  .unscribe-display {
-    left: 20%;
-  }
-
-  .btn-accept-CGU, .back {
-    font-size: 20px;
-  }
-}
-
-@media all and (max-width: 480px) {
-  .unscribe-display {
-    left: 2%
-  }
-}
-
 .unscribe-display p {
   margin: 0;
   padding-bottom: 8px;
@@ -157,8 +140,21 @@
 }
 
 @media all and (max-width: 768px) {
+  .unscribe-display {
+    left: 20%;
+  }
+
+  .btn-accept-CGU, .back {
+    font-size: 20px;
+  }
   #mentions,
   #mentions-cookies {
     margin: 0 16px 24px 16px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .unscribe-display {
+    left: 2%
   }
 }
