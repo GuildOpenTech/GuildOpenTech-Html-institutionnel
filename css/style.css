@@ -18,7 +18,7 @@ h2,
 h3,
 h4,
 form,
-blockquote{
+blockquote {
   margin: 0;
   padding: 0;
   direction: ltr;
@@ -53,11 +53,8 @@ textarea {
 }
 
 input {
-  /* height: 40px;
-  margin: 3px 0; */
   outline: none;
   line-height: normal;
-  /* font-size: 18 px; */
 }
 
 input[type="submit"] {
@@ -83,10 +80,6 @@ textarea:focus {
   outline: none;
 }
 
-/*------------------------------------------------------------------------------------------*/
-/* 2. Layout Elements */
-/*------------------------------------------------------------------------------------------*/
-
 section {
   clear: both;
   overflow: hidden;
@@ -95,8 +88,6 @@ section {
 #content {
   padding-top: 135px;
 }
-
-/* Targets all elements */
 
 [class*="col-"] {
   float: left;
@@ -107,7 +98,6 @@ section {
   padding: 0;
 }
 
-/* section 2 : l'association paragraphes */
 .col-2 {
   width: 30%;
 }
@@ -185,11 +175,10 @@ nav#nav-mobile .expanded {
 }
 
 .nav-list li:first-child .link-node-navbar {
-  display: none; /* Cache le trait avant le premier lien */
+  display: none;
 }
 
 /* --------- 2.3 Buttons ---------- */
-/*Style*/
 
 .button {
   font-size: 30px;
@@ -302,8 +291,6 @@ nav#nav-mobile a:hover {
 
 /* --------- 2.6 Images ---------- */
 
-/*Alignment*/
-
 img {
   vertical-align: center;
 }
@@ -326,10 +313,6 @@ a img {
 a img:hover {
   opacity: 0.7;
 }
-
-/*------------------------------------------------------------------------------------------*/
-/* 3. Fonts */
-/*------------------------------------------------------------------------------------------*/
 
 h1 {
   padding: 20px 0;
@@ -476,18 +459,7 @@ h6 {
   margin-left: 260px;
 }
 
-/*------------------------------------------------------------------------------------------*/
-/* 5. Content Elements */
-/*------------------------------------------------------------------------------------------*/
-
 /* --------- 5.1 Icons ---------- */
-
-/*Font Icon sizes*/
-
-.fa-1x {
-  font-size: 18px !important;
-}
-
 /*Icon Block*/
 
 .icon-block {
@@ -524,18 +496,6 @@ h6 {
 .icon-top .icon-block-description {
   padding-top: 12px;
 }
-
-/* --------- 5.2 Parallax Elements ---------- */
-
-/* .banner-parallax-1,
-.banner-parallax-2,
-.banner-parallax-3 {
-  min-height: 350px;
-} */
-
-/*------------------------------------------------------------------------------------------*/
-/* 6. Landing Page Sections */
-/*------------------------------------------------------------------------------------------*/
 
 /* --------- 6.1 Introduction ---------- */
 
@@ -646,10 +606,8 @@ h6 {
 
 .testimonial img {
   max-height: 80px;
-  /* border-radius: 250em; */
 }
 
-/* Style Classic - Avatar above Testimonial */
 .testimonial header {
   display: flex;
   align-items: center;
@@ -719,8 +677,6 @@ h6 {
 #CTA-testimonials {
   margin: 55px auto 35px auto;
 }
-
-/* Style Big */
 
 .testimonial.bigtest {
   padding-top: 0;
@@ -848,7 +804,6 @@ h6 {
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  /* vertical-align: middle; */
 }
 
 #gallery a:hover:before {
@@ -873,7 +828,6 @@ h6 {
 /*------------------------------------------------------------------------------------------*/
 .sedepasser {
   display: flex;
-  /* margin: 24px 0; */
 }
 
 .sedepasser-title {
@@ -1184,66 +1138,6 @@ h6 {
   }
 }
 
-#landing-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-#landing-footer .link-partenaires,
-#landing-footer-about .link-partenaires,
-#landing-footer-connexion .link-partenaires,
-#landing-footer-register .link-partenaires {
-  display: flex;
-  padding-left: 16px;
-}
-
-#landing-footer .link-partenaires a,
-#landing-footer-about .link-partenaires a,
-#landing-footer-connexion .link-partenaires a,
-#landing-footer-register .link-partenaires a {
-  margin-right: 20px;
-  display: flex;
-  align-items: center;
-}
-
-#landing-footer .link-partenaires img,
-#landing-footer-about .link-partenaires img,
-#landing-footer-connexion .link-partenaires img,
-#landing-footer-register .link-partenaires img {
-  height: 19px;
-}
-
-#landing-footer .link-footer-propos,
-#landing-footer-about .link-footer-propos,
-#landing-footer-connexion .link-footer-propos,
-#landing-footer-register .link-footer-propos {
-  margin-left: auto;
-  margin-right: 100px;
-}
-
-#landing-footer .link-terry,
-#landing-footer-about .link-terry,
-#landing-footer-connexion .link-terry,
-#landing-footer-register .link-terry {
-  padding-right: 24px;
-  border-right: 2px solid #f6a316;
-}
-
-#landing-footer .link-about,
-#landing-footer-about .link-about,
-#landing-footer-connexion .link-about,
-#landing-footer-register .link-about {
-  padding-left: 24px;
-}
-
-#landing-footer .link-footer-propos a:hover,
-#landing-footer-about .link-footer-propos a:hover,
-#landing-footer-connexion .link-footer-propos a:hover,
-#landing-footer-register .link-footer-propos a:hover {
-  color: #f6a316;
-}
-
 #content-about {
   display: flex;
   flex-direction: column;
@@ -1374,6 +1268,66 @@ main .design-about {
 /* 7. Footer */
 /*------------------------------------------------------------------------------------------*/
 
+#landing-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#landing-footer .link-partenaires,
+#landing-footer-about .link-partenaires,
+#landing-footer-connexion .link-partenaires,
+#landing-footer-register .link-partenaires {
+  display: flex;
+  padding-left: 16px;
+}
+
+#landing-footer .link-partenaires a,
+#landing-footer-about .link-partenaires a,
+#landing-footer-connexion .link-partenaires a,
+#landing-footer-register .link-partenaires a {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#landing-footer .link-partenaires img,
+#landing-footer-about .link-partenaires img,
+#landing-footer-connexion .link-partenaires img,
+#landing-footer-register .link-partenaires img {
+  height: 19px;
+}
+
+#landing-footer .link-footer-propos,
+#landing-footer-about .link-footer-propos,
+#landing-footer-connexion .link-footer-propos,
+#landing-footer-register .link-footer-propos {
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+#landing-footer .link-terry,
+#landing-footer-about .link-terry,
+#landing-footer-connexion .link-terry,
+#landing-footer-register .link-terry {
+  padding-right: 24px;
+  border-right: 2px solid #f6a316;
+}
+
+#landing-footer .link-about,
+#landing-footer-about .link-about,
+#landing-footer-connexion .link-about,
+#landing-footer-register .link-about {
+  padding-left: 24px;
+}
+
+#landing-footer .link-footer-propos a:hover,
+#landing-footer-about .link-footer-propos a:hover,
+#landing-footer-connexion .link-footer-propos a:hover,
+#landing-footer-register .link-footer-propos a:hover {
+  color: #f6a316;
+}
+
 #landing-footer,
 #landing-footer-about,
 #landing-footer-connexion,
@@ -1382,7 +1336,6 @@ main .design-about {
   align-items: center;
   justify-content: center;
   clear: both;
-  /* padding: 0 28px 0 28px; */
 }
 
 .title-footer {
@@ -1492,7 +1445,6 @@ main .design-about {
   #landing-footer-about .link-partenaires,
   #landing-footer-connexion .link-partenaires,
   #landing-footer-register .link-partenaires {
-    /* flex-direction: column; */
     align-items: center;
   }
 }
@@ -1830,7 +1782,6 @@ main .design-about {
     flex-wrap: wrap;
     justify-content: center;
     margin: 0;
-
   }
 
   #content-about {
@@ -1901,12 +1852,12 @@ main .design-about {
     padding-left: 24px;
   }
 
-#landing-footer .link-partenaires a,
-#landing-footer-about .link-partenaires a,
-#landing-footer-connexion .link-partenaires a,
-#landing-footer-register .link-partenaires a {
-  margin-right: 0;
-}
+  #landing-footer .link-partenaires a,
+  #landing-footer-about .link-partenaires a,
+  #landing-footer-connexion .link-partenaires a,
+  #landing-footer-register .link-partenaires a {
+    margin-right: 0;
+  }
 
   #landing-footer-about .link-partenaires a img {
     height: 19px;

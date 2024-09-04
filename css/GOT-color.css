@@ -1,18 +1,3 @@
-/* GOT Landing Page Dynamic Style Index
-
-1. Website Default Styling
-2. Header/Navigation
-3. Primary and Secondary Colors
-4. Banner
-5. Typography
-6. Buttons
-7. Footer
-
-
-/*------------------------------------------------------------------------------------------*/
-/* 1. Website Default Styling */
-/*------------------------------------------------------------------------------------------*/
-
 body {
   background: #071520;
   font-family: "Cabin", "Open Sans", Arial;
@@ -69,17 +54,12 @@ nav a {
 .nav-list li:hover a {
   color: #f6a316;
   transform: scale(110%);
-  /* text-shadow: 0 0 5px #2ab8cd, 0 0 10px #2ab8cd, 0 0 20px #2ab8cd,
-    0 0 40px #2ab8cd, 0 0 80px #2ab8cd, 0 0 120px #2ab8cd; */
 }
-
-/* Header Colors when the Navigation is sticky and solid */
 
 .nav-list ul li a {
   color: #f6a316;
 }
 
-/* Header Active State */
 #nav-mobile .nav-list li a.active {
   color: #f6a316;
   text-shadow: none;
@@ -91,15 +71,9 @@ nav a {
     0 0 40px #2ab8cd, 0 0 80px #2ab8cd, 0 0 120px #2ab8cd;
 }
 
-/* Border Color _ Cadres _ sections 6_Témoignages et 7_GOT Connexion */
-
 .pricing-block-content:hover {
   border-color: #2ab8cd;
 }
-
-/*------------------------------------------------------------------------------------------*/
-/* 3. Section 7_GOT Connexion_Primary and Secondary Colors */
-/*------------------------------------------------------------------------------------------*/
 
 /* Section 7_GOT Connexion Primary Background and Text Colors */
 
@@ -108,7 +82,7 @@ nav a {
   background: linear-gradient(to left, #071520, #0d2d45);
 }
 
-/* Section 7_GOT Connexion Couleur texte tarif */
+
 .primary-color,
 .primary-color .section-title,
 .primary-color .section-subtitle,
@@ -116,7 +90,7 @@ nav a {
 .featured .pricing p {
   color: #fcfbfb;
 }
-/* Tirets dans toutes les sections */
+
 .section-heading h2:after {
   background: #2ab8cd;
   content: "";
@@ -142,10 +116,6 @@ nav a {
 #landing-footer-register {
   background: radial-gradient(circle at bottom, #0d2d45 10%, #071520 80%);
 }
-
-/*------------------------------------------------------------------------------------------*/
-/* 4. Hero-section
-/*------------------------------------------------------------------------------------------*/
 
 /* Sections Background and Text Colors = section 1 */
 
@@ -197,13 +167,9 @@ nav a {
   }
 }
 
-/*------------------------------------------------------------------------------------------*/
-/* 6. Buttons */
-/*------------------------------------------------------------------------------------------*/
 
-/* ----------Default Buttons---------- */
 
-/* Watch video section Se dépasser 4 et Connexion 7  Button Text */
+/* section Se dépasser 4 et Connexion 7  Button Text */
 
 .button,
 input[type="submit"] {
@@ -251,10 +217,6 @@ input[type="submit"]:hover {
   border-color: #2ab8cd;
 }
 
-/*------------------------------------------------------------------------------------------*/
-/* 7. Footer _  Design@GOT */
-/*------------------------------------------------------------------------------------------*/
-
 #landing-footer,
 #landing-footer p,
 #landing-footer a,
@@ -266,8 +228,6 @@ input[type="submit"]:hover {
   font-weight: normal;
   color: #2ab8cd;
 }
-
-/* Footer Icon Color */
 
 #landing-footer i {
   color: #2ab8cd;
