@@ -11,7 +11,7 @@ Merci, enjoy :D
 
 ## Screenshot
 
-![](./images/screenshotmd/Screenshot%202024-08-27%20at%2014-00-49%20Guild%20Open%20Tech.png)
+![](./images/screenshotmd/Capture%20d'%C3%A9cran%202024-09-04%20142806.png)
 
 ![](./images/screenshotmd/Screenshot%202024-08-27%20at%2014-01-55%20Guild%20Open%20Tech.png)
 
