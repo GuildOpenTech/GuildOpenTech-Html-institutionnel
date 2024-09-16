@@ -183,7 +183,9 @@ span {
 #phone,
 #seniorA,
 #interest1,
-#experienceB {
+#experienceB,
+#phone2,
+#repeatPassword2 {
   color: #fefefe;
   width: 258px;
   height: 40px;
@@ -197,7 +199,9 @@ span {
 #password,
 #postA,
 #interest2,
-#nicknameDiscord {
+#nicknameDiscord,
+#email2,
+#password2{
   color: #fefefe;
   width: 288px;
   height: 40px;
