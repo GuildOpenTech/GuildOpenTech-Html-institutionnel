@@ -6,8 +6,15 @@ const fieldMdp = document.getElementById("fieldMdp");
 const fieldMdp2 = document.getElementById("fieldMdp2");
 const inputMdp = document.getElementById("password");
 const inputMdp2 = document.getElementById("password2");
-const inputRepeatPassword = document.getElementById("repeatPassword")
-const inputRepeatPassword2 = document.getElementById("repeatPassword2")
+const inputRepeatPassword = document.getElementById("repeatPassword");
+const inputRepeatPassword2 = document.getElementById("repeatPassword2");
+const divMessageSend = document.getElementById("formValid");
+const btnMessage = document.getElementById("btnData");
+
+btnMessage.addEventListener("click", function () {
+  divMessageSend.classList.remove("messageSendData");
+  divMessageSend.classList.add("sendData");
+});
 
 const windowInformation = document.createElement("div");
 windowInformation.classList.add("windowInfo");
@@ -55,12 +62,13 @@ function updateValue(e) {
 
 function handleRepeatMdp(e) {
   const mdp = inputMdp.value;
+  const mdp2 = inputMdp2.value;
   const mdpRepeat = e.target.value;
 
   const targetSelector = e.target.getAttribute("data-target");
   const errorField = document.querySelector(targetSelector);
 
-  if (mdp !== mdpRepeat) {
+  if (mdp !== mdpRepeat && mdp2 !== mdpRepeat) {
     errorField.classList.add("errorMdp");
     errorField.innerHTML = "Les mots de passe ne correspondent pas !";
   } else {
@@ -69,7 +77,7 @@ function handleRepeatMdp(e) {
   }
 }
 
-inputRepeatPassword.addEventListener("change", handleRepeatMdp)
+inputRepeatPassword.addEventListener("change", handleRepeatMdp);
 inputRepeatPassword2.addEventListener("change", handleRepeatMdp);
 
 function clearMessage(e) {
@@ -107,11 +115,19 @@ formTest.addEventListener("submit", function (event) {
     .then((response) => response.json())
     .then((data) => {
       console.log("Succès:", data);
-      alert("Données envoyées avec succès!");
+      divMessageSend.classList.remove("sendData");
+      divMessageSend.classList.add("messageSendData");
+      const message = document.createElement("p");
+      message.textContent = "Vos informations ont bien été envoyées ! Merci";
+      divMessageSend.appendChild(message);
     })
     .catch((error) => {
       console.error("Erreur:", error);
-      alert("Erreur lors de l'envoi des données.");
+      divMessageSend.classList.remove("sendData");
+      divMessageSend.classList.add("messageSendData");
+      const message = document.createElement("p");
+      message.textContent = "Une erreur est survenue ! Si le problème persiste, contactez-nous : contact@guildopentech.org";
+      divMessageSend.appendChild(message);
     });
 });
 
@@ -131,10 +147,18 @@ formTest2.addEventListener("submit", function (event) {
     .then((response) => response.json())
     .then((data) => {
       console.log("Succès:", data);
-      alert("Données envoyées avec succès!");
+      divMessageSend.classList.remove("sendData");
+      divMessageSend.classList.add("messageSendData");
+      const message = document.createElement("p");
+      message.textContent = "Vos informations ont bien été envoyées ! Merci";
+      divMessageSend.appendChild(message);
     })
     .catch((error) => {
       console.error("Erreur:", error);
-      alert("Erreur lors de l'envoi des données.");
+      divMessageSend.classList.remove("sendData");
+      divMessageSend.classList.add("messageSendData");
+      const message = document.createElement("p");
+      message.textContent = "Une erreur est survenue ! Si le problème persiste, contactez-nous : contact@guildopentech.org";
+      divMessageSend.appendChild(message);
     });
 });
