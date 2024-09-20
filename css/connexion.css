@@ -230,11 +230,26 @@ span {
   font-size: 16px;
 }
 
-/* .form-register label {
-  margin-right: 11px;
-} */
+.windowInfo {
+  width: 250px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: 2px solid #2ab8cd;
+  border-radius: 5px;
+  position: absolute; 
+  top: 30px;
+  left: 20px;
+  z-index: 9999;
+}
+
+.errorMdp {
+  color: red;
+  margin-bottom: 4px;
+}
 
 .information {
+  cursor: pointer;
   width: 22px;
   margin-right: 4px;
   margin-left: 4px;

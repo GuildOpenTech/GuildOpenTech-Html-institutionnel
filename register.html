@@ -128,13 +128,19 @@
               class="eyes-2"
             />
           </div>
-          <div class="field-2">
+          <div class="field-2" id="fieldMdp">
             <label for="password">Mot de passe*</label>
-            <img src="/images/icons/circle-info-solid.svg" alt="information" class="information">
+            <img
+              src="/images/icons/circle-info-solid.svg"
+              alt="information"
+              class="information"
+              id="iconFieldMdp"
+            />
             <input
               type="password"
               name="password"
               id="password"
+              data-target="#errorMdp"
               placeholder="**************"
             />
             <img
@@ -143,12 +149,14 @@
               class="eyes-2"
             />
           </div>
+          <div id="errorMdp"></div>
           <div class="field-2">
             <label for="repeatPassword">Confirmer le Mdp*</label>
             <input
               type="password"
               name="repeatPassword"
               id="repeatPassword"
+              data-target="#isValid2"
               placeholder="mdp12345@GOT"
             />
             <img
@@ -157,6 +165,7 @@
               class="eyes-2"
             />
           </div>
+          <div id="isValid2"></div>
           <div class="field-2">
             <label for="phone">Téléphone*</label>
             <input type="text" name="phone" id="phone" />
@@ -165,22 +174,22 @@
             <label for="postA">Poste A*</label>
             <select name="posts" id="postA">
               <option value=""></option>
-              <option value="CDP">Chef de projet/PO</option>
-              <option value="communication">Communication</option>
-              <option value="CM">Communauty Manager</option>
-              <option value="compta">Comptabilité</option>
-              <option value="development">Développement</option>
-              <option value="Graf">Graphisme</option>
+              <option value="Chef De Projet">Chef de projet/PO</option>
+              <option value="Communication">Communication</option>
+              <option value="Communauty Manager">Communauty Manager</option>
+              <option value="Comptabilité">Comptabilité</option>
+              <option value="Development">Développement</option>
+              <option value="Graphisme">Graphisme</option>
               <option value="IA">IA</option>
-              <option value="juridic">Juridique</option>
-              <option value="marketing">Marketing</option>
-              <option value="graf">Graphisme</option>
-              <option value="mentorat">Mentorat</option>
-              <option value="SM">ScrumMaster</option>
+              <option value="Juridique">Juridique</option>
+              <option value="Marketing">Marketing</option>
+              <option value="Graphisme">Graphisme</option>
+              <option value="Mentorat">Mentorat</option>
+              <option value="Scrum Master">ScrumMaster</option>
               <option value="SEO">SEO</option>
               <option value="UI">UI</option>
               <option value="UX">UX</option>
-              <option value="wordpress">Wordpress</option>
+              <option value="Wordpress">Wordpress</option>
             </select>
           </div>
           <div class="field-2">
@@ -197,66 +206,66 @@
             <label for="interest1">Intérêt 1*</label>
             <select name="interest" id="interest1">
               <option value=""></option>
-              <option value="CDP">Chef de projet/PO</option>
-              <option value="communication">Communication</option>
-              <option value="CM">Communauty Manager</option>
-              <option value="compta">Comptabilité</option>
-              <option value="development">Développement</option>
-              <option value="Graf">Graphisme</option>
+              <option value="Chef De Projet">Chef de projet/PO</option>
+              <option value="Communication">Communication</option>
+              <option value="Communauty Manager">Communauty Manager</option>
+              <option value="Comptabilité">Comptabilité</option>
+              <option value="Development">Développement</option>
+              <option value="Graphisme">Graphisme</option>
               <option value="IA">IA</option>
-              <option value="juridic">Juridique</option>
-              <option value="marketing">Marketing</option>
-              <option value="graf">Graphisme</option>
-              <option value="mentorat">Mentorat</option>
-              <option value="SM">ScrumMaster</option>
+              <option value="Juridique">Juridique</option>
+              <option value="Marketing">Marketing</option>
+              <option value="Graphisme">Graphisme</option>
+              <option value="Mentorat">Mentorat</option>
+              <option value="Scrum Master">ScrumMaster</option>
               <option value="SEO">SEO</option>
               <option value="UI">UI</option>
               <option value="UX">UX</option>
-              <option value="wordpress">Wordpress</option>
+              <option value="Wordpress">Wordpress</option>
             </select>
           </div>
           <div class="field-2">
             <label for="experienceB">Expérience B</label>
             <select name="experience" id="experienceB">
               <option value=""></option>
-              <option value="CDP">Chef de projet/PO</option>
-              <option value="communication">Communication</option>
-              <option value="CM">Communauty Manager</option>
-              <option value="compta">Comptabilité</option>
-              <option value="development">Développement</option>
-              <option value="Graf">Graphisme</option>
+              <option value="Chef De Projet">Chef de projet/PO</option>
+              <option value="Communication">Communication</option>
+              <option value="Communauty Manager">Communauty Manager</option>
+              <option value="Comptabilité">Comptabilité</option>
+              <option value="Development">Développement</option>
+              <option value="Graphisme">Graphisme</option>
               <option value="IA">IA</option>
-              <option value="juridic">Juridique</option>
-              <option value="marketing">Marketing</option>
-              <option value="graf">Graphisme</option>
-              <option value="mentorat">Mentorat</option>
-              <option value="SM">ScrumMaster</option>
+              <option value="Juridique">Juridique</option>
+              <option value="Marketing">Marketing</option>
+              <option value="Graphisme">Graphisme</option>
+              <option value="Mentorat">Mentorat</option>
+              <option value="Scrum Master">ScrumMaster</option>
               <option value="SEO">SEO</option>
               <option value="UI">UI</option>
               <option value="UX">UX</option>
-              <option value="wordpress">Wordpress</option>
+              <option value="Wordpress">Wordpress</option>
             </select>
           </div>
           <div class="field-2">
             <label for="interest2">Intérêt 2</label>
             <select name="interest2" id="interest2">
               <option value=""></option>
-              <option value="CDP">Chef de projet/PO</option>
-              <option value="communication">Communication</option>
-              <option value="CM">Communauty Manager</option>
-              <option value="compta">Comptabilité</option>
-              <option value="development">Développement</option>
-              <option value="Graf">Graphisme</option>
+              <option value="Chef De Projet">Chef de projet/PO</option>
+              <option value="Communication">Communication</option>
+              <option value="Communauty Manager">Communauty Manager</option>
+              <option value="Comptabilité">Comptabilité</option>
+              <option value="Development">Développement</option>
+              <option value="Graphisme">Graphisme</option>
               <option value="IA">IA</option>
-              <option value="juridic">Juridique</option>
-              <option value="marketing">Marketing</option>
-              <option value="graf">Graphisme</option>
-              <option value="mentorat">Mentorat</option>
-              <option value="SM">ScrumMaster</option>
+              <option value="Juridique">Juridique</option>
+              <option value="Marketing">Marketing</option>
+              <option value="Graphisme">Graphisme</option>
+              <option value="Mentorat">Mentorat</option>
+              <option value="Scrum Master">ScrumMaster</option>
               <option value="SEO">SEO</option>
               <option value="UI">UI</option>
               <option value="UX">UX</option>
-              <option value="wordpress">Wordpress</option>
+              <option value="Wordpress">Wordpress</option>
             </select>
           </div>
           <div class="field-3">
@@ -297,13 +306,19 @@
               class="eyes-2"
             />
           </div>
-          <div class="field-2">
+          <div class="field-2" id="fieldMdp2">
             <label for="password2">Mot de passe*</label>
-            <img src="/images/icons/circle-info-solid.svg" alt="information" class="information">
+            <img
+              src="/images/icons/circle-info-solid.svg"
+              alt="information"
+              class="information"
+              id="iconFieldMdp2"
+            />
             <input
               type="password"
               name="password2"
               id="password2"
+              data-target="#errorMdp2"
               placeholder="mdp12345@GOT"
             />
             <img
@@ -312,12 +327,14 @@
               class="eyes-2"
             />
           </div>
+          <div id="errorMdp2"></div>
           <div class="field-2">
             <label for="repeatPassword2">Confirmer le Mdp*</label>
             <input
               type="password"
               name="repeatPassword2"
               id="repeatPassword2"
+              data-target="#isValid4"
               placeholder="mdp12345@GOT"
             />
             <img
@@ -326,6 +343,7 @@
               class="eyes-2"
             />
           </div>
+          <div id="isValid4"></div>
           <div class="field-2">
             <label for="phone2">Téléphone*</label>
             <input type="text" name="phone2" id="phone2" />
@@ -406,6 +424,5 @@
     <script src="js/lightbox.min.js"></script>
     <script src="js/site.js"></script>
     <script src="js/form.js"></script>
-
   </body>
 </html>
