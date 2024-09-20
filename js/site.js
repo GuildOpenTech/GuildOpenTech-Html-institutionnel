@@ -305,27 +305,3 @@ function updateGallery(galleryDivs, startIndex, visibleCards) {
     }
   });
 }
-
-// URL de l'App Script
-// https://script.google.com/macros/s/AKfycby9dxiHuZowuSEEKPH_Jf3jk4cQUDxpIIVtdH5MRwJdI9ki4Wku_xntU63QDhV7S5IV9w/exec
-
-document.getElementById("my-form").addEventListener("submit", function (event) {
-  event.preventDefault();
-
-  const url =
-    "https://script.google.com/macros/s/AKfycby9dxiHuZowuSEEKPH_Jf3jk4cQUDxpIIVtdH5MRwJdI9ki4Wku_xntU63QDhV7S5IV9w/exec";
-  const formData = new FormData(document.getElementById("my-form-2"));
-  console.log("🚀 ~ document.getElementById ~ formData:", formData);
-
-  fetch(url, {
-    method: "POST",
-    mode: "no-cors",
-    body: formData,
-  })
-    .then((response) => {
-      alert("Données envoyées avec succès!");
-    })
-    .catch((error) => {
-      alert("Erreur lors de l'envoi des données.");
-    });
-});

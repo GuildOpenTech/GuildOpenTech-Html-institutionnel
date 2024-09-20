@@ -218,7 +218,7 @@ span {
 
 .form-register-toSee {
   margin-top: 28px;
-  width: 71%;
+  width: 72%;
 }
 
 .form-register select {
@@ -230,8 +230,14 @@ span {
   font-size: 16px;
 }
 
-.form-register label {
+/* .form-register label {
   margin-right: 11px;
+} */
+
+.information {
+  width: 22px;
+  margin-right: 4px;
+  margin-left: 4px;
 }
 
 .eyes-2 {
