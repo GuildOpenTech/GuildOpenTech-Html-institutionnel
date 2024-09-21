@@ -20,6 +20,7 @@
 .text-nofinish-register {
   font-size: 21px;
   font-style: italic;
+  width: 100%;
 }
 
 span {
@@ -285,7 +286,7 @@ span {
 }
 
 #inscription {
-  margin-top: 122px;
+  margin-top: 180px;
   margin-right: 26px;
 }
 
