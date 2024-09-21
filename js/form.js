@@ -10,6 +10,7 @@ const inputRepeatPassword = document.getElementById("repeatPassword");
 const inputRepeatPassword2 = document.getElementById("repeatPassword2");
 const divMessageSend = document.getElementById("formValid");
 const btnMessage = document.getElementById("btnData");
+const spinner = document.getElementById("spinner");
 
 btnMessage.addEventListener("click", function () {
   divMessageSend.classList.remove("messageSendData");
@@ -97,14 +98,50 @@ inputMdp2.addEventListener("input", clearMessage);
 inputRepeatPassword.addEventListener("input", clearMessage);
 inputRepeatPassword2.addEventListener("input", clearMessage);
 
+// formTest.addEventListener("submit", function (event) {
+//   event.preventDefault();
+//   const url =
+//     "https://script.google.com/macros/s/AKfycbydY-Nk3NR_yYP7clz_gPBxJgyz5P3D9C6qaOs4I4bxhehu6my_P-0r4kwlDPdU3Lv0/exec";
+//   const formData = new FormData(formTest);
+
+//   fetch(url, {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/x-www-form-urlencoded",
+//     },
+//     body: new URLSearchParams(formData),
+//   })
+//     .then((response) => response.json())
+//     .then((data) => {
+//       console.log("Succès:", data);
+
+//       divMessageSend.classList.remove("sendData");
+//       divMessageSend.classList.add("messageSendData");
+//       const message = document.createElement("p");
+//       message.textContent = "Vos informations ont bien été envoyées ! Merci";
+//       divMessageSend.appendChild(message);
+//     })
+//     .catch((error) => {
+//       console.error("Erreur:", error);
+//       divMessageSend.classList.remove("sendData");
+//       divMessageSend.classList.add("messageSendData");
+//       const message = document.createElement("p");
+//       message.textContent =
+//         "Une erreur est survenue ! Si le problème persiste, contactez-nous : contact@guildopentech.org";
+//       divMessageSend.appendChild(message);
+//     });
+// });
+
 formTest.addEventListener("submit", function (event) {
   event.preventDefault();
-  const url =
-    "https://script.google.com/macros/s/AKfycbydY-Nk3NR_yYP7clz_gPBxJgyz5P3D9C6qaOs4I4bxhehu6my_P-0r4kwlDPdU3Lv0/exec";
+  const url = "https://script.google.com/macros/s/AKfycbydY-Nk3NR_yYP7clz_gPBxJgyz5P3D9C6qaOs4I4bxhehu6my_P-0r4kwlDPdU3Lv0/exec";
   const formData = new FormData(formTest);
-  formData.forEach((value, key) => {
-    console.log(`${key}: ${value}`);
-  });
+  
+  // Afficher le spinner
+  spinner.classList.remove("hiddenSpin");
+  spinner.classList.add("spin");
+  
+  // Envoi des données
   fetch(url, {
     method: "POST",
     headers: {
@@ -115,6 +152,10 @@ formTest.addEventListener("submit", function (event) {
     .then((response) => response.json())
     .then((data) => {
       console.log("Succès:", data);
+
+      spinner.classList.remove("spin");
+      spinner.classList.add("hiddenSpin");
+
       divMessageSend.classList.remove("sendData");
       divMessageSend.classList.add("messageSendData");
       const message = document.createElement("p");
@@ -123,6 +164,10 @@ formTest.addEventListener("submit", function (event) {
     })
     .catch((error) => {
       console.error("Erreur:", error);
+
+      spinner.classList.remove("spin");
+      spinner.classList.add("hiddenSpin");
+
       divMessageSend.classList.remove("sendData");
       divMessageSend.classList.add("messageSendData");
       const message = document.createElement("p");
@@ -133,10 +178,12 @@ formTest.addEventListener("submit", function (event) {
 
 formTest2.addEventListener("submit", function (event) {
   event.preventDefault();
-  const url =
-    "https://script.google.com/macros/s/AKfycbydY-Nk3NR_yYP7clz_gPBxJgyz5P3D9C6qaOs4I4bxhehu6my_P-0r4kwlDPdU3Lv0/exec";
+  const url = "https://script.google.com/macros/s/AKfycbydY-Nk3NR_yYP7clz_gPBxJgyz5P3D9C6qaOs4I4bxhehu6my_P-0r4kwlDPdU3Lv0/exec";
   const formData = new FormData(formTest2);
-
+  
+  spinner.classList.remove("hiddenSpin");
+  spinner.classList.add("spin");
+  
   fetch(url, {
     method: "POST",
     headers: {
@@ -147,6 +194,11 @@ formTest2.addEventListener("submit", function (event) {
     .then((response) => response.json())
     .then((data) => {
       console.log("Succès:", data);
+      spinner.classList.remove("spin");
+      spinner.classList.add("hiddenSpin");
+
+      divMessageSend.innerHTML = "";
+
       divMessageSend.classList.remove("sendData");
       divMessageSend.classList.add("messageSendData");
       const message = document.createElement("p");
@@ -155,6 +207,12 @@ formTest2.addEventListener("submit", function (event) {
     })
     .catch((error) => {
       console.error("Erreur:", error);
+
+      spinner.classList.remove("spin");
+      spinner.classList.add("hiddenSpin");
+
+      divMessageSend.innerHTML = "";
+
       divMessageSend.classList.remove("sendData");
       divMessageSend.classList.add("messageSendData");
       const message = document.createElement("p");
@@ -162,3 +220,35 @@ formTest2.addEventListener("submit", function (event) {
       divMessageSend.appendChild(message);
     });
 });
+// formTest2.addEventListener("submit", function (event) {
+//   event.preventDefault();
+//   const url =
+//     "https://script.google.com/macros/s/AKfycbydY-Nk3NR_yYP7clz_gPBxJgyz5P3D9C6qaOs4I4bxhehu6my_P-0r4kwlDPdU3Lv0/exec";
+//   const formData = new FormData(formTest2);
+
+//   fetch(url, {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/x-www-form-urlencoded",
+//     },
+//     body: new URLSearchParams(formData),
+//   })
+//     .then((response) => response.json())
+//     .then((data) => {
+//       console.log("Succès:", data);
+//       divMessageSend.classList.remove("sendData");
+//       divMessageSend.classList.add("messageSendData");
+//       const message = document.createElement("p");
+//       message.textContent = "Vos informations ont bien été envoyées ! Merci";
+//       divMessageSend.appendChild(message);
+//     })
+//     .catch((error) => {
+//       console.error("Erreur:", error);
+//       divMessageSend.classList.remove("sendData");
+//       divMessageSend.classList.add("messageSendData");
+//       const message = document.createElement("p");
+//       message.textContent =
+//         "Une erreur est survenue ! Si le problème persiste, contactez-nous : contact@guildopentech.org";
+//       divMessageSend.appendChild(message);
+//     });
+// });

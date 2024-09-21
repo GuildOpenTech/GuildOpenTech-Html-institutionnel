@@ -753,8 +753,6 @@ h6 {
 }
 
 #link-github a:hover {
-  /* text-shadow: 0 0 1px #2ab8cd, 0 0 3px #2ab8cd, 0 0 5px #2ab8cd,
-    0 0 10px rgba(42, 184, 205, 0.7); */
   text-shadow: 0 0 2px #2ab8cd, 0 0 4px rgba(42, 184, 205, 0.6),
     0 0 6px rgba(42, 184, 205, 0.4);
 }

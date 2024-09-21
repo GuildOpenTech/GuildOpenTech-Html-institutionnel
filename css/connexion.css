@@ -23,6 +23,24 @@
   width: 100%;
 }
 
+.hiddenSpin {
+  display: none;
+}
+
+.spin {
+  display: flex;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 65px;
+  height: 65px;
+  animation: spin 2s linear infinite;
+}
+
+#nofinish-register {
+  width: 100%;
+}
+
 span {
   font-style: italic;
 }
@@ -132,7 +150,6 @@ span {
 }
 
 .form-login input {
-  /* color: #fefefe; */
   width: 288px;
   height: 100%;
   background-color: #071520;
@@ -150,7 +167,6 @@ span {
   display: flex;
   flex-direction: column;
   padding-left: 237px;
-  /* width: 46%; */
   margin-top: 48px;
 }
 
@@ -286,7 +302,7 @@ span {
 }
 
 #inscription {
-  margin-top: 180px;
+  margin-top: 185px;
   margin-right: 26px;
 }
 
