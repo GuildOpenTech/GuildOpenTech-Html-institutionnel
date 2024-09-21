@@ -11,6 +11,7 @@ const inputRepeatPassword2 = document.getElementById("repeatPassword2");
 const divMessageSend = document.getElementById("formValid");
 const btnMessage = document.getElementById("btnData");
 const spinner = document.getElementById("spinner");
+const messageTextIsSend = document.getElementById("messageTextIsSend")
 
 btnMessage.addEventListener("click", function () {
   divMessageSend.classList.remove("messageSendData");
@@ -98,40 +99,6 @@ inputMdp2.addEventListener("input", clearMessage);
 inputRepeatPassword.addEventListener("input", clearMessage);
 inputRepeatPassword2.addEventListener("input", clearMessage);
 
-// formTest.addEventListener("submit", function (event) {
-//   event.preventDefault();
-//   const url =
-//     "https://script.google.com/macros/s/AKfycbydY-Nk3NR_yYP7clz_gPBxJgyz5P3D9C6qaOs4I4bxhehu6my_P-0r4kwlDPdU3Lv0/exec";
-//   const formData = new FormData(formTest);
-
-//   fetch(url, {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/x-www-form-urlencoded",
-//     },
-//     body: new URLSearchParams(formData),
-//   })
-//     .then((response) => response.json())
-//     .then((data) => {
-//       console.log("Succès:", data);
-
-//       divMessageSend.classList.remove("sendData");
-//       divMessageSend.classList.add("messageSendData");
-//       const message = document.createElement("p");
-//       message.textContent = "Vos informations ont bien été envoyées ! Merci";
-//       divMessageSend.appendChild(message);
-//     })
-//     .catch((error) => {
-//       console.error("Erreur:", error);
-//       divMessageSend.classList.remove("sendData");
-//       divMessageSend.classList.add("messageSendData");
-//       const message = document.createElement("p");
-//       message.textContent =
-//         "Une erreur est survenue ! Si le problème persiste, contactez-nous : contact@guildopentech.org";
-//       divMessageSend.appendChild(message);
-//     });
-// });
-
 formTest.addEventListener("submit", function (event) {
   event.preventDefault();
   const url = "https://script.google.com/macros/s/AKfycbydY-Nk3NR_yYP7clz_gPBxJgyz5P3D9C6qaOs4I4bxhehu6my_P-0r4kwlDPdU3Lv0/exec";
@@ -158,9 +125,8 @@ formTest.addEventListener("submit", function (event) {
 
       divMessageSend.classList.remove("sendData");
       divMessageSend.classList.add("messageSendData");
-      const message = document.createElement("p");
-      message.textContent = "Vos informations ont bien été envoyées ! Merci";
-      divMessageSend.appendChild(message);
+      messageTextIsSend.textContent = "Vos informations ont bien été envoyées ! Merci";
+      divMessageSend.appendChild(messageTextIsSend);
     })
     .catch((error) => {
       console.error("Erreur:", error);
@@ -170,9 +136,8 @@ formTest.addEventListener("submit", function (event) {
 
       divMessageSend.classList.remove("sendData");
       divMessageSend.classList.add("messageSendData");
-      const message = document.createElement("p");
-      message.textContent = "Une erreur est survenue ! Si le problème persiste, contactez-nous : contact@guildopentech.org";
-      divMessageSend.appendChild(message);
+      messageTextIsSend.textContent = "Une erreur est survenue ! Si le problème persiste, contactez-nous : contact@guildopentech.org";
+      divMessageSend.appendChild(messageTextIsSend);
     });
 });
 
@@ -197,13 +162,11 @@ formTest2.addEventListener("submit", function (event) {
       spinner.classList.remove("spin");
       spinner.classList.add("hiddenSpin");
 
-      divMessageSend.innerHTML = "";
-
+      formTest2.reset()
       divMessageSend.classList.remove("sendData");
       divMessageSend.classList.add("messageSendData");
-      const message = document.createElement("p");
-      message.textContent = "Vos informations ont bien été envoyées ! Merci";
-      divMessageSend.appendChild(message);
+      messageTextIsSend.textContent = "Vos informations ont bien été envoyées ! Merci";
+      divMessageSend.appendChild(messageTextIsSend);
     })
     .catch((error) => {
       console.error("Erreur:", error);
@@ -215,9 +178,8 @@ formTest2.addEventListener("submit", function (event) {
 
       divMessageSend.classList.remove("sendData");
       divMessageSend.classList.add("messageSendData");
-      const message = document.createElement("p");
-      message.textContent = "Une erreur est survenue ! Si le problème persiste, contactez-nous : contact@guildopentech.org";
-      divMessageSend.appendChild(message);
+      messageTextIsSend.textContent = "Une erreur est survenue ! Si le problème persiste, contactez-nous : contact@guildopentech.org";
+      divMessageSend.appendChild(messageTextIsSend);
     });
 });
 // formTest2.addEventListener("submit", function (event) {
