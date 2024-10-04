@@ -94,7 +94,12 @@
     </header>
 
     <main id="content-register-page">
-      <img src="/images/icons/spinner-solid.svg" alt="spinner" id="spinner" class="hiddenSpin" />
+      <img
+        src="/images/icons/spinner-solid.svg"
+        alt="spinner"
+        id="spinner"
+        class="hiddenSpin"
+      />
       <div id="formValid" class="sendData">
         <p id="messageTextIsSend"></p>
         <button id="btnData" class="button primary-color">Fermer</button>
@@ -119,6 +124,26 @@
         </p>
         <span>* réponse obligatoire</span>
         <form action="" id="my-form" class="form-register">
+          <div class="field-2">
+            <label for="name">Nom*</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Doe"
+              required
+            />
+          </div>
+          <div class="field-2">
+            <label for="firstname">Prénom*</label>
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="Jane"
+              required
+            />
+          </div>
           <div class="field-2">
             <label for="email">Email*</label>
             <input
@@ -187,7 +212,9 @@
               <option value="Community Manager">Community Manager</option>
               <option value="Ressources humaines">Ressources humaines</option>
               <option value="Comptabilité">Comptabilité</option>
-              <option value="Development">Développement</option>
+              <option value="Développement Full-stack">
+                Développement Full-stack
+              </option>
               <option value="DevOps/Cloud">DevOps/Cloud</option>
               <option value="Développement Front">Développement Front</option>
               <option value="Développement Back">Développement Back</option>
@@ -223,7 +250,9 @@
               <option value="Community Manager">Community Manager</option>
               <option value="Ressources humaines">Ressources humaines</option>
               <option value="Comptabilité">Comptabilité</option>
-              <option value="Development">Développement</option>
+              <option value="Developpement Full-stack">
+                Développement Full-stack
+              </option>
               <option value="DevOps/Cloud">DevOps/Cloud</option>
               <option value="Développement Front">Développement Front</option>
               <option value="Développement Back">Développement Back</option>
@@ -249,7 +278,9 @@
               <option value="Community Manager">Community Manager</option>
               <option value="Ressources humaines">Ressources humaines</option>
               <option value="Comptabilité">Comptabilité</option>
-              <option value="Development">Développement</option>
+              <option value="Developpement Full-stack">
+                Développement Full-stack
+              </option>
               <option value="DevOps/Cloud">DevOps/Cloud</option>
               <option value="Développement Front">Développement Front</option>
               <option value="Développement Back">Développement Back</option>
@@ -275,7 +306,9 @@
               <option value="Community Manager">Community Manager</option>
               <option value="Ressources humaines">Ressources humaines</option>
               <option value="Comptabilité">Comptabilité</option>
-              <option value="Development">Développement</option>
+              <option value="Developpement Full-stack">
+                Développement Full-stack
+              </option>
               <option value="DevOps/Cloud">DevOps/Cloud</option>
               <option value="Développement Front">Développement Front</option>
               <option value="Développement Back">Développement Back</option>
@@ -292,13 +325,32 @@
               <option value="Wordpress">Wordpress</option>
             </select>
           </div>
-          <div class="field-3">
+          <div class="field-3" id="fieldDiscord">
             <div class="link-create-discord">
               <label for="nicknameDiscord">Pseudo Discord</label>
-              <input type="text" name="nicknameDiscord" id="nicknameDiscord" />
+              <img
+                src="/images/icons/circle-info-solid.svg"
+                alt="information"
+                class="information"
+                id="iconFieldDiscord"
+              />
+              <input
+                type="text"
+                name="nicknameDiscord"
+                id="nicknameDiscord"
+                data-target="#nicknameDiscordError"
+              />
             </div>
+            <div id="nicknameDiscordError"></div>
             <a href="https://discord.com/login" target="_blank"
               >Je n'en ai pas, je crée un pseudo Discord</a
+            >
+          </div>
+          <div>
+            <input type="checkbox" id="age" name="age" required />
+            <label for="age"
+              >Je certifie que je suis bien âgé de au moins 15 ans au jour de
+              mon inscription</label
             >
           </div>
           <div id="CTA-beMember-2">
@@ -316,6 +368,26 @@
         </p>
         <span>* réponse obligatoire</span>
         <form id="my-form-2" class="form-register-toSee">
+          <div class="field-2">
+            <label for="name2">Nom*</label>
+            <input
+              type="text"
+              name="name2"
+              id="name2"
+              placeholder="Doe"
+              required
+            />
+          </div>
+          <div class="field-2">
+            <label for="firstname2">Prénom*</label>
+            <input
+              type="text"
+              name="firstname2"
+              id="firstname2"
+              placeholder="Jane"
+              required
+            />
+          </div>
           <div class="field-2">
             <label for="email2">Email*</label>
             <input
@@ -374,6 +446,13 @@
           <div class="field-2">
             <label for="phone2">Téléphone*</label>
             <input type="text" name="phone2" id="phone2" required />
+          </div>
+          <div>
+            <input type="checkbox" id="age2" name="age2" required />
+            <label for="age2"
+              >Je certifie que je suis bien âgé de au moins 15 ans au jour de
+              mon inscription</label
+            >
           </div>
           <div id="CTA-toSee-2">
             <button type="submit" class="button primary-color">

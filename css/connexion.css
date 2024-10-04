@@ -7,7 +7,7 @@
 #content-register-page {
   display: flex;
   margin-left: 85px;
-  height: 1154px;
+  height: 1282px;
 }
 
 .text-nofinish {
@@ -202,7 +202,9 @@ span {
 #interest1,
 #experienceB,
 #phone2,
-#repeatPassword2 {
+#repeatPassword2,
+#name,
+#firstname {
   color: #fefefe;
   width: 258px;
   height: 40px;
@@ -218,7 +220,9 @@ span {
 #interest2,
 #nicknameDiscord,
 #email2,
-#password2{
+#password2,
+#name2,
+#firstname2 {
   color: #fefefe;
   width: 288px;
   height: 40px;
