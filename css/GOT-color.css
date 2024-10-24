@@ -139,6 +139,13 @@ nav a {
   background-size: 70%;
 }
 
+.videoSection {
+  background: url("../images/banner-images/Body_2_MeshGradient-CC_html.webp")
+    no-repeat right center;
+  background-size: 50%;
+  margin-top: 122px;
+}
+
 #Sedepasser {
   background: url("../images/banner-images/Body_2_MeshGradient-CC_html.webp")
     no-repeat right center;

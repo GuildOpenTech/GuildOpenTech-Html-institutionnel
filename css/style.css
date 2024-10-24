@@ -459,6 +459,11 @@ h6 {
   margin-left: 260px;
 }
 
+.video {
+  display: flex;
+  margin: 0 auto;
+}
+
 /* --------- 5.1 Icons ---------- */
 /*Icon Block*/
 
@@ -625,7 +630,7 @@ h6 {
   font-weight: 600;
   font-size: 26px;
   padding-bottom: 8px;
-  width: 50%;
+  /* width: 50%; */
 }
 
 #title-testi {
@@ -644,7 +649,7 @@ h6 {
   border-bottom-left-radius: 500px;
   border-bottom-right-radius: 500px;
   background: linear-gradient(to bottom, #071520, #0d2d45);
-  width: 294px;
+  width: 297px;
 }
 
 .testimonial.classic .person-footer {
@@ -734,7 +739,7 @@ h6 {
 }
 
 .card-gallery ul li {
-  padding-bottom: 4px;
+  padding-bottom: 9px;
 }
 
 .icon-gallery {
@@ -1924,7 +1929,7 @@ main .design-about {
 
 @media all and (min-width: 1024px) {
   .testimonial.classic {
-    width: 282px;
+    width: 400px;
   }
 }
 
