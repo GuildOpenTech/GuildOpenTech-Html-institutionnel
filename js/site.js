@@ -152,7 +152,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   navLinks.forEach((link) => {
     link.addEventListener("click", function (event) {
-      console.log("click");
       const target = link.getAttribute("href");
 
       // Vérifie si le lien est un ID (scroll vers une section)
@@ -222,7 +221,6 @@ function setupCarousel(
 
   // Événement pour la flèche de droite
   slideToRight.addEventListener("click", function () {
-    console.log("click");
     if (startIndex + visibleCards < galleryDivs.length) {
       startIndex++;
       updateGallery(galleryDivs, startIndex, visibleCards);

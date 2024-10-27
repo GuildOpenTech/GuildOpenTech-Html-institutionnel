@@ -1758,7 +1758,7 @@ main .design-about {
 
   #testimonials .cards-testimonials blockquote {
     width: 80%;
-    height: 629px;
+    height: 756px;
   }
 
   .testimonial.classic q {
@@ -1771,6 +1771,10 @@ main .design-about {
 
   #CTA-testimonials {
     font-size: 17px;
+  }
+
+  #CTA-testimonials {
+    margin: 135px auto 35px auto;
   }
 
   #landing-footer-about .link-partenaires {
