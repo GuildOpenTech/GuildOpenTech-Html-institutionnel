@@ -1759,7 +1759,7 @@ main .design-about {
 
   #testimonials .cards-testimonials blockquote {
     width: 80%;
-    height: 756px;
+    height: 1120px;
   }
 
   .testimonial.classic q {
@@ -1775,7 +1775,7 @@ main .design-about {
   }
 
   #CTA-testimonials {
-    margin: 135px auto 35px auto;
+    margin: 530px auto 35px auto;
   }
 
   #landing-footer-about .link-partenaires {
