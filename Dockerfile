@@ -1,5 +1,5 @@
 # Use an official nginx image as the base image
-FROM nginx:alpine
+FROM nginx:latest
 
 # Copy the HTML files to the nginx html directory
 COPY . /usr/share/nginx/html
