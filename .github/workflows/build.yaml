@@ -28,5 +28,5 @@ jobs:
         GOOGLE_PROJECT: ${{ secrets.GOOGLE_PROJECT }}
       run: |
         gcloud auth configure-docker us-central1-docker.pkg.dev
-        docker build -t --platform linux/amd64 us-central1-docker.pkg.dev/$GOOGLE_PROJECT/guild-open-tech-repository/got-web-front:latest .
+        docker buildx build --platform linux/amd64 -t us-central1-docker.pkg.dev/$GOOGLE_PROJECT/guild-open-tech-repository/got-web-front:latest .
         docker push us-central1-docker.pkg.dev/$GOOGLE_PROJECT/guild-open-tech-repository/got-web-front:latest
