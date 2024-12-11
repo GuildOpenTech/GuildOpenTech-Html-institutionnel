@@ -4,5 +4,5 @@ FROM nginx:latest
 # Copy the HTML files to the nginx html directory
 COPY . /usr/share/nginx/html
 
-# Expose port 80
-EXPOSE 80
+# Expose port 8080
+EXPOSE 8080
