@@ -1,10 +1,25 @@
-name: Deploy Nginx
+name: Deploy got-web-front
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+       - main
+       - develop
 
 jobs:
+  main:
+    runs-on: ubuntu-latest
+    environment:
+      name: Guildopentech      
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v4
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN}}
   deploy:
     runs-on: ubuntu-latest
     steps:
@@ -28,5 +43,5 @@ jobs:
         GOOGLE_PROJECT: ${{ secrets.GOOGLE_PROJECT }}
       run: |
         gcloud auth configure-docker europe-west1-docker.pkg.dev
-        docker buildx build --platform linux/amd64 -t europe-west1-docker.pkg.dev/$GOOGLE_PROJECT/guild-open-tech-repository/got-web-front:latest .
-        docker push europe-west1-docker.pkg.dev/$GOOGLE_PROJECT/guild-open-tech-repository/got-web-front:latest
+        docker buildx build --platform linux/amd64 -t europe-west1-docker.pkg.dev/$GOOGLE_PROJECT/guild-open-tech-repository/got-web-front-dev:latest .
+        docker push europe-west1-docker.pkg.dev/$GOOGLE_PROJECT/guild-open-tech-repository/got-web-front-dev:latest
